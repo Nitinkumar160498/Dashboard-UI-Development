@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>Responsive Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="custom-container"></div>
+  <div class="menu-trigger">
+    <a href="#" class="d-lg-none menu-toggle" role="button">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+  <div class="sidenav">
+    <h3>Project Name</h3>
+    <ul>
+      <li>
+        <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-regular fa-message"></i> notifications</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-user-group"></i> Customers</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-play"></i> Campaigns</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-calendar-alt"></i> Calendar</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-file-alt"></i> Content</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-video"></i> Videos</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-list"></i> Lists</a>
+      </li>
+    </ul>
+
+    <div class="bottom-text">
+      <img src="images/online green.png" alt="profile image" class="centered-image" />
+      <div class="content-container">
+        <p><b>My Profile</b></p>
+        <p>Jeff Modica</p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="utility-bar">
+      <div class="search-input-wrapper">
+        <input type="text" placeholder="Search" />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="icon-container">
+        <i class="fa-regular fa-envelope"><sup>2</sup></i>
+        <i class="fa-regular fa-message"><sup>12</sup></i>
+        <i class="fa-solid fa-gear"></i>
+        <i class="fa-regular fa-circle-question"></i>
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <div class="notifications">
+        <div class="d-flex align-items-center flex-wrap">
+          <h5 class="mb-3">Notifications</h5>
+          <div class="d-flex align-items-center feature-container mb-3">
+            <span class="circle badge badge-primary">5</span>
+            <p>Unreplied <strong>Emails</strong></p>
+            <i class="fa fa-arrow-right custom-icon"></i>
+          </div>
+          <div class="d-flex align-items-center feature-container mb-3">
+            <span class="circle badge badge-primary">10</span>
+            <p>Unreplied <strong>SMS</strong></p>
+            <i class="fa fa-arrow-right custom-icon"></i>
+          </div>
+          <div class="d-flex align-items-center feature-container mb-3">
+            <span class="circle badge badge-primary">3</span>
+            <p>Missed <strong>Calls</strong></p>
+            <i class="fa fa-arrow-right custom-icon"></i>
+          </div>
+          <div class="mb-3 need-help">
+            <a href="#"><strong>Need Help?</strong></a>
+            <i class="fa-solid fa-circle-info ml-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      <div class="messages">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="card mt-3">
+              <div class="card-header">
+                <h5>Messages</h5>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="one-tab" data-bs-toggle="tab" href="#one" role="tab"
+                      aria-controls="one" aria-selected="true">Day</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="two-tab" data-bs-toggle="tab" href="#two" role="tab" aria-controls="two"
+                      aria-selected="false">Week</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="three-tab" data-bs-toggle="tab" href="#three" role="tab"
+                      aria-controls="three" aria-selected="false">2 Weeks</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="four-tab" data-bs-toggle="tab" href="#four" role="tab" aria-controls="four"
+                      aria-selected="false">Month</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>Emails</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">160</span>
+                      <p>Sent</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">75</span>
+                      <p>Received</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">5</span>
+                      <p>Unread</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>SMS</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">300</span>
+                      <p>Sent</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">99</span>
+                      <p>Received</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">12</span>
+                      <p>Unread</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>Calls</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">1000</span>
+                      <p>Dialed</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">499</span>
+                      <p>Completed</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">3</span>
+                      <p>Missed</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>Emails</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">300</span>
+                      <p>Sent</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">150</span>
+                      <p>Received</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">20</span>
+                      <p>Unread</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>SMS</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">600</span>
+                      <p>Sent</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">200</span>
+                      <p>Received</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">50</span>
+                      <p>Unread</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>Calls</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">2000</span>
+                      <p>Dialed</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">700</span>
+                      <p>Completed</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">15</span>
+                      <p>Missed</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>Emails</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">600</span>
+                      <p>Sent</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">300</span>
+                      <p>Received</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">70</span>
+                      <p>Unread</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>SMS</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">800</span>
+                      <p>Sent</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">400</span>
+                      <p>Received</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">100</span>
+                      <p>Unread</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>Calls</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">2200</span>
+                      <p>Dialed</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">900</span>
+                      <p>Completed</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">30</span>
+                      <p>Missed</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>Emails</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">800</span>
+                      <p>Sent</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">500</span>
+                      <p>Received</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">100</span>
+                      <p>Unread</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>SMS</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">1300</span>
+                      <p>Sent</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">700</span>
+                      <p>Received</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">200</span>
+                      <p>Unread</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="content-wrapper">
+                    <div class="content-box custom-box">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="content-box">
+                      <h6>Calls</h6>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cerulean-blue">2500</span>
+                      <p>Dialed</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text puerto-rico">1000</span>
+                      <p>Completed</p>
+                    </div>
+                    <div class="content-box">
+                      <span class="number-text cabaret">50</span>
+                      <p>Missed</p>
+                    </div>
+                    <div class="content-box">
+                      <i class="fa fa-arrow-right custom-icon"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
